@@ -73,10 +73,7 @@ def test_check_if_path_exist(files_hadndler):
     assert files_hadndler.check_if_path_exist(
         files_hadndler.path_list) is True, 'Existing path reported as unexisting!'
 
-    assert files_hadndler.check_if_path_exist(
-        files_hadndler.path_list) is True, 'Existing path reported as unexisting!'
-
-
+   
 def test_is_int(files_hadndler):
     assert files_hadndler.is_int(0) is True, 'Should be True for int!'
     assert files_hadndler.is_int(-45) is True, 'Should be True for int!'
