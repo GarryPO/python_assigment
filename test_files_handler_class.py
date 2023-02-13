@@ -100,4 +100,16 @@ def test_input_exeption_score(files_hadndler):
         files_hadndler.main(min_amount)   
     assert str(e_inf.value) ==  f"Value passed - {min_amount} - is not an integer - check the  input", 'Expected exeption is not present'
 
-            
+
+def test_files_handler():
+    pathA = "dirs/a"
+    pathB = "dirs/b"
+    pathC = "dirs/c"
+    min_amount = 1
+    #asserting 1 since I used .gitkeep to be able to commit c folder to git
+    assert len(os.listdir(pathC)) == 1,'Folder is not empty'
+    files_handler = Files_handler(pathB, pathA, pathC)
+    files_handler.main(min_amount)  
+
+    assert len(os.listdir(pathC)) == 3,'Files to be copied are missing'
+          
