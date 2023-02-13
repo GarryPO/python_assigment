@@ -3,7 +3,7 @@
 Class to be tested - Files_handler 
 
 Files_handler goal is to compare CSV's provided to it and to find if they contain the same elements and if they do to check
-If number of similarities found corresponds to score number provided as argument for a main function of the class.
+If number of similarities found corresponds to score number provided as argument for a main function of the class to copie file that was being compared to the destination location provided during class init
 
 Tests are iplemented using pytest framework 
 
