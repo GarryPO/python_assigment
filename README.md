@@ -9,10 +9,10 @@ Tests are iplemented using pytest framework
 
 To run tests - 
 
-1.Clone repository
+1. Clone repository
 
-2.cd to project root
+2. cd to project root
 
-3.Run 'pip install -r requirements.txt'
+3. Run 'pip install -r requirements.txt'
 
 4. Run pytest comand 
