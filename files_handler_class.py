@@ -65,9 +65,3 @@ class Files_handler:
         except Exception as e:
             print("ERROR!! check if the input is correct %s" % e)
 
-
-"""
-TODO: add tests for each class function
-TODO: add functional tests against class provided 
-TODO:Arrange folder structure add requirements.txt  reporting and logger 
-"""
