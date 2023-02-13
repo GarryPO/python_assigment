@@ -19,7 +19,10 @@ def destentation_cleanup():
     files = glob.glob('dirs/c/*')
     for f in files:
         os.remove(f)
-
+    try:
+        os.remove('test.txt')
+    except FileNotFoundError as e:
+        pass    
 
 def test_compare_sets(files_hadndler):
 
@@ -83,7 +86,7 @@ def test_is_int(files_hadndler):
     assert files_hadndler.is_int("a") is False, 'Should be False for non int!'
 
 
-def test_intup_expetion_paths():
+def test_input_exeption_paths():
     with pytest.raises(AssertionError) as e_inf:
         f_h = Files_handler('test','ste','dddd')
         f_h.main(3)
