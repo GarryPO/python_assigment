@@ -11,7 +11,7 @@
 
 ### 1. Clone repository
 
-### 2 . cd to project root
+### 2. cd to project root
 
 ### 3. Run 'pip install -r requirements.txt'
 
