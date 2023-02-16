@@ -50,8 +50,8 @@ def test_happy_camera_creation():
     try:
         resp = api.create_camera(good_payload)
         body = json.loads(resp.body)
-        assert body.get('mode') == good_payload.get('mode'), "Camera created with inorrect mode!"
-        assert body.get('capture_address') == good_payload.get('capture_address'), "Cameras capture address is inorrect mode!"
+        assert body.get('mode') == good_payload.get('mode'), "Camera created with incorrect mode!"
+        assert body.get('capture_address') == good_payload.get('capture_address'), "Cameras capture address is incorrect mode!"
         assert resp.status_code == 200, "Camera wasn't created!"
         
     expect ApiExeption as e:
